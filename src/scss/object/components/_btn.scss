@@ -1,0 +1,23 @@
+.c-btn {
+    width: 196px;
+    font-family: $muli;
+    font-weight: 600;
+    border: 1px solid $white;
+
+    
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 17px 0;
+
+        img {
+            padding-left: 30px;
+        }
+    }
+
+    &--yellow {
+        background-color: $bgYellow;
+        border: 1px solid $bgYellow;
+    }
+}

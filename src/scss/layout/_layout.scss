@@ -1,0 +1,25 @@
+.l-wrap-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.l-wrap-inner--full {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.l-py-100 {
+    padding: 100px 0;
+}
+
+.l-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 20px; 
+    border: 1px solid green;
+
+    .l-block__col {
+        width: calc(100% / 3);
+    }
+}
