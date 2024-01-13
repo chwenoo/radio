@@ -4,20 +4,36 @@
     font-weight: 600;
     border: 1px solid $white;
 
-    
     a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 17px 0;
+        padding: 17px;
+        position: relative;
 
-        img {
-            padding-left: 30px;
+        &::after {
+            content: url('../img/arrow-1.png');
+            position: absolute;
+            top: 0;
+            right: 34px;
+            width: 25%;
+            height: 100%;
+            text-align: center;
+        
+            display: flex;  
+            justify-content: center;
+            align-items: center;
         }
     }
 
     &--yellow {
         background-color: $bgYellow;
         border: 1px solid $bgYellow;
+        
+        a {
+            color: $bgColor;
+            
+            &::after {
+                content: url('../img/location.png');
+                background-color: $btnBg;
+            }
+        }
     }
 }
