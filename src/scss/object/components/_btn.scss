@@ -53,20 +53,21 @@
         }
     }
 
-    &--journal {
+    &--journal{
         background-color: $bgYellow;
         border: 1px solid $bgYellow;
         margin: 0 auto;
         margin-top: 50px;
 
-        a {
+        a{
             font-family: $muli;
             font-size: 16px;
             font-weight: 600;
             color: $bgColor;
-            &::after {
-                content: url('../img/arrow-2.png');
+            &::after{
+                content: url(../img/arrow-2.png);
                 background-color: $btnBg;
+                
             }
         }
     }

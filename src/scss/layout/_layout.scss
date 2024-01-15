@@ -22,8 +22,11 @@
     flex-wrap: wrap;
     gap: 20px 20px;
 
-    &__col {
+    .l-block__col {
         width: calc(100% / 3 - 20px);
+        @media screen and (max-width: 800px) {
+            width: calc(100% / 2 - 20px);
+        }
     }
 }
 
