@@ -3,11 +3,9 @@
     font-family: $muli;
     font-weight: 600;
     border: 1px solid $white;
-    overflow: hidden;
-
     a {
-        padding: 17px;
         position: relative;
+        padding: 17px;
 
         &::after {
             content: url('../img/arrow-1.png');
@@ -17,35 +15,40 @@
             width: 25%;
             height: 100%;
             text-align: center;
-        
-            display: flex;  
+            display: flex;
             justify-content: center;
             align-items: center;
         }
+
     }
 
     &--yellow {
         background-color: $bgYellow;
         border: 1px solid $bgYellow;
-        
+
         a {
             color: $bgColor;
-            transition: all 0.5s ease;
-            
+
             &::after {
                 content: url('../img/location.png');
                 background-color: $btnBg;
-                transition: all 0.5s ease;
             }
+        }
+    }
 
-            &:hover {
+    &--aboutus {
+        background-color: $bgYellow;
+        border: none;
+        margin-top: 260px;
+        // position: absolute; 
+        // bottom: 20px;
+        left: 0;
+        a {
+            color: $bgColor;
+
+            &::after {
+                content: url('../img/arrow-2.png');
                 background-color: $btnBg;
-                color: $white;
-
-                &::after {
-                    background-color: rgba(0, 0, 0, 0.5);
-                }
-    
             }
         }
     }
