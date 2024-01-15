@@ -1,6 +1,8 @@
 body {
     background-color: $bgColor;
     color: $white;
+    font-family: $muli;
+    font-weight: 300;
 }
 
 a {
@@ -9,6 +11,13 @@ a {
     height: 100%;
     text-decoration: none;
     color: $white;
+}
+
+@media (min-width: 1400px) {
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }
 
 

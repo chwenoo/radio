@@ -3,13 +3,12 @@
     font-family: $muli;
     font-weight: 600;
     border: 1px solid $white;
-
-    
     a {
         position: relative;
         padding: 17px;
-        &::after{
-            content: url(../img/arrow-1.png);
+
+        &::after {
+            content: url('../img/arrow-1.png');
             position: absolute;
             top: 0;
             right: 34px;
@@ -19,16 +18,41 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
         }
-        
+
     }
 
     &--yellow {
         background-color: $bgYellow;
         border: 1px solid $bgYellow;
 
+        a {
+            color: $bgColor;
+
+            &::after {
+                content: url('../img/location.png');
+                background-color: $btnBg;
+            }
+        }
     }
+
+    &--aboutus {
+        background-color: $bgYellow;
+        border: none;
+        margin-top: 260px;
+        // position: absolute; 
+        // bottom: 20px;
+        left: 0;
+        a {
+            color: $bgColor;
+
+            &::after {
+                content: url('../img/arrow-2.png');
+                background-color: $btnBg;
+            }
+        }
+    }
+
     &--journal{
         background-color: $bgYellow;
         border: 1px solid $bgYellow;

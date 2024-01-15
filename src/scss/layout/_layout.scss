@@ -1,24 +1,26 @@
 .l-wrap-inner {
     max-width: 1100px;
     margin: 0 auto;
-}
 
-.l-wrap-inner--full {
-    max-width: 1400px;
-    margin: 0 auto;
+    &--aboutus {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
-
 .l-py-100 {
     padding: 100px 0;
 }
+.l-my-100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
-.l-block{
+.l-block {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px 20px; 
-    border: 1px solid green;
+    flex-wrap: wrap;
+    gap: 20px 20px;
 
     .l-block__col {
         width: calc(100% / 3 - 20px);
@@ -26,6 +28,20 @@
             width: calc(100% / 2 - 20px);
         }
     }
-    
 }
 
+
+@media only screen and (max-width: 800px) {
+    .l-block {
+        &__col {
+           
+            width: calc(100% / 2 - 20px);
+        }
+        .c-card__txt{
+            top: 50%;
+        }
+        .c-card--unique{
+            margin: 0;
+        }
+    }
+}

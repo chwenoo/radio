@@ -1,3 +1,5 @@
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+
 // Foundation
 @import 'foundation/reset';
 @import 'foundation/setting';
@@ -17,3 +19,7 @@
 // Project
 @import 'object/project/blog';
 @import 'object/project/travel';
+@import 'object/project/mainvisual';
+@import 'object/project/raido';
+@import 'object/project/aboutus';
+@import 'object/project/contact';
