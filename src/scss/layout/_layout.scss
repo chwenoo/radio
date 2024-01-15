@@ -7,10 +7,6 @@
         flex-wrap: wrap;
     }
 }
-
-
-
-
 .l-py-100 {
     padding: 100px 0;
 }
@@ -30,8 +26,15 @@
 
 @media only screen and (max-width: 800px) {
     .l-block {
-        &__col{
+        &__col {
+            
             width: calc(100% / 2 - 20px);
+        }
+        .c-card__txt{
+            top: 50%;
+        }
+        .c-card--unique{
+            margin: 0;
         }
     }
 }
