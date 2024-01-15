@@ -3,6 +3,7 @@
     font-family: $muli;
     font-weight: 600;
     border: 1px solid $white;
+    overflow: hidden;
 
     a {
         padding: 17px;
@@ -29,9 +30,39 @@
         
         a {
             color: $bgColor;
+            transition: all 0.5s ease;
             
             &::after {
                 content: url('../img/location.png');
+                background-color: $btnBg;
+                transition: all 0.5s ease;
+            }
+
+            &:hover {
+                background-color: $btnBg;
+                color: $white;
+
+                &::after {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+    
+            }
+        }
+    }
+
+    &--journal {
+        background-color: $bgYellow;
+        border: 1px solid $bgYellow;
+        margin: 0 auto;
+        margin-top: 50px;
+
+        a {
+            font-family: $muli;
+            font-size: 16px;
+            font-weight: 600;
+            color: $bgColor;
+            &::after {
+                content: url('../img/arrow-2.png');
                 background-color: $btnBg;
             }
         }
