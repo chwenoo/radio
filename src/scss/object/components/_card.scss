@@ -1,0 +1,52 @@
+.c-card{
+    width: 100%;
+    
+    
+    border: 1px solid orangered;
+
+        img{
+          display: block;  
+          width: 100%;
+          
+        }
+
+
+    &__body{
+        padding: 20px;
+        background-color: $cardBg;
+        .c-card__text{
+            p{
+                margin-top: 10px;
+                font-size: 18px;
+                font-family: $muli;
+                font-weight: 400;
+                color: $white;
+            }
+            .c-card__title{
+                display: flex;
+                gap: 10px;
+                margin-top: 20px;
+                p{
+                    font-family: $muli;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $protext;
+                }
+            }
+            
+        }
+        .c-card__date{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-family: $muli;
+                font-size: 14px;
+                font-weight: 400;
+                color: $datecolor;
+            }
+        }
+    }
+
+}
+

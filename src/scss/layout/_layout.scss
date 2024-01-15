@@ -14,12 +14,18 @@
 
 .l-block{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px 20px; 
     border: 1px solid green;
 
     .l-block__col {
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 20px);
+        @media screen and (max-width: 800px) {
+            width: calc(100% / 2 - 20px);
+        }
     }
+    
 }
+
