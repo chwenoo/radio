@@ -75,3 +75,24 @@
         }
     }
   }
+
+  
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 800px) {
+    .c-card--unique {
+        margin: 0;
+    }
+    .c-card .c-card__txt{
+      bottom: 0px;
+    }
+  
+  }
+  @media only screen and (max-width: 600px) {
+    .c-card--unique {
+      margin: 0;
+  }
+  }
