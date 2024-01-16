@@ -24,24 +24,24 @@
 
     .l-block__col {
         width: calc(100% / 3 - 20px);
-        @media screen and (max-width: 800px) {
-            width: calc(100% / 2 - 20px);
-        }
     }
 }
 
 
 @media only screen and (max-width: 800px) {
-    .l-block {
-        &__col {
-           
-            width: calc(100% / 2 - 20px);
-        }
-        .c-card__txt{
-            top: 50%;
-        }
-        .c-card--unique{
-            margin: 0;
-        }
+    .l-block .l-block__col {
+        width: calc(100% / 2 - 20px);
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .l-block .l-block__col {
+        width: calc(100% / 1 - 20px);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .l-block .l-block__col {
+        width: calc(100% );
     }
 }
